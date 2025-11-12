@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  color: #800000;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.header p {
+  color: #666;
+  font-size: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.forum-discussie {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.forum-discussie h2 {
+  color: #800000;
+  font-size: 22px;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #800000;
+  padding-bottom: 8px;
+}
+
+.forum-discussie h3 {
+  color: #800000;
+  font-size: 17px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.forum-discussie p {
+  margin-bottom: 15px;
+}
+
+.forum-discussie ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.forum-discussie li {
+  margin-bottom: 8px;
+}
+
+.forum-discussie code {
+  background: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.conclusie {
+  font-style: italic;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  color: #555;
+}
+
+.tools-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tools-header {
+  background: #800000;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.tools-header h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.tools-header p {
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+.tool-tile {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-left: 4px solid #800000;
+  transition: all 0.3s ease;
+}
+
+.tool-tile:hover {
+  box-shadow: 0 4px 12px rgba(128,0,0,0.2);
+  transform: translateY(-2px);
+}
+
+.tool-tile h3 {
+  color: #800000;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.tool-tile p {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.tool-tile a {
+  display: inline-block;
+  background: #800000;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.tool-tile a:hover {
+  background: #a00000;
+}
+
+@media (max-width: 968px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .tools-container {
+    order: -1;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h1>De beschikbare internetopties</h1>
+    <p>door Anton Noë | nov 12, 2025 | Telecommunicatie, Uit het forum | 0 Reacties</p>
+  </div>
+
+  <div class="grid">
+    
+    <!-- Linkerkolom -->
+    <div class="forum-discussie">
+      <h2>Terugblik: De 4G-Revolutie in La France Profonde (2018-2019)</h2>
+      
+      <p>Een forumdiscussie uit 2018-2019 vangt perfect het gevoel van die tijd: de frustratie over traag ADSL en de opkomst van het 4G-alternatief, terwijl glasvezel nog een verre belofte leek. De discussie begon met scepsis over de belofte van 100% très haut débit in 2022, gezien eerdere gebroken beloftes.</p>
+
+      <h3>1. De Pijn van ADSL</h3>
+      <p>De rode draad was de frustratie met het koperen netwerk. Gebruikers meldden snelheden van minder dan 1 Mbps, onbetrouwbare verbindingen (vooral bij onweer) en de dure, trage service van Orange. De term <code>re-adsl</code> werd gekscherend gebruikt, een verwijzing naar het constant opnieuw moeten opstarten van de verbinding.</p>
+
+      <h3>2. De 4G-Router als Redmiddel</h3>
+      <p>Voor velen was de 4G-router dé oplossing. Er werd volop geëxperimenteerd met hardware (zoals de Huawei B315) en providers (Bouygues en SFR RED).</p>
+      
+      <ul>
+        <li><strong>Snelheidswinst:</strong> Leden meldden spectaculaire sprongen van &lt;1 Mbps (ADSL) naar 20, 45 of zelfs 60 Mbps (4G).</li>
+        <li><strong>Abonnementen:</strong> De <code>€ 4,99 voor 20 GB</code>-acties waren populair. Een terugkerend probleem was dat veel providers een Franse IBAN eisten; Bouygues via PayPal was een bekende workaround.</li>
+        <li><strong>Dataverbruik:</strong> Dit was de nieuwe uitdaging. 20 GB bleek krap, en men berekende dat één HD-voetbalwedstrijd al 6 GB kon kosten.</li>
+      </ul>
+
+      <h3>3. De Stand van Zaken Nu (Eind 2025)</h3>
+      <p>De 4G-router was de cruciale overbrugging. Kijken we nu, eind 2025, naar de situatie, dan is het landschap drastisch veranderd.</p>
+      
+      <ul>
+        <li><strong>De Glasvezel-belofte is Nagekomen:</strong> Frankrijk is nu koploper in Europa wat betreft de uitrol van glasvezel (FttH). Het doel van 100% dekking is nagenoeg gehaald.</li>
+        <li><strong>Het Einde van ADSL:</strong> Orange is sinds 2023 actief bezig het koperen netwerk te ontmantelen. Vanaf 2026 kunnen geen nieuwe ADSL-abonnementen meer worden afgesloten. Migreren is een noodzaak geworden.</li>
+        <li><strong>De Rol van 4G/5G:</strong> De 4G-box is een standaardproduct geworden. 5G wordt nu ook op de 700 MHz-band uitgerold, specifiek om plattelandsdekking te bieden. Data-abonnementen van 200 GB of meer zijn nu de norm.</li>
+      </ul>
+
+      <p class="conclusie">De 4G-router was de reddingsboei die de forumleden in 2018 nodig hadden. Ironisch genoeg is de glasvezel-belofte waar ze zo sceptisch over waren, de technologie die hun 4G-oplossing op veel plaatsen alweer overbodig heeft gemaakt.</p>
+    </div>
+
+    <!-- Rechterkolom -->
+    <div class="tools-container">
+      
+      <div class="tools-header">
+        <h2>Test Zelf de Beschikbaarheid op Uw Adres</h2>
+        <p>Wilt u weten hoe het er nu voor staat op uw (toekomstige) adres in Frankrijk? Gebruik deze officiële tools om een compleet beeld te krijgen van alle beschikbare internetopties.</p>
+      </div>
+
+      <div class="tool-tile">
+        <h3>Beste Vaste Verbinding (Totaalbeeld)</h3>
+        <p>De belangrijkste tool. Voer uw adres in en zie direct de maximaal haalbare snelheid via glasvezel, ADSL, kabel of een vaste 4G/5G-radioverbinding.</p>
+        <a href="https://maconnexioninternet.arcep.fr" target="_blank" rel="noopener">Ga naar maconnexioninternet.arcep.fr →</a>
+      </div>
+
+      <div class="tool-tile">
+        <h3>Glasvezel Status (Detailkaart)</h3>
+        <p>De officiële FttH-kaart. Zoom in tot op gebouwniveau om de precieze status van de glasvezeluitrol te zien (beschikbaar, gepland, in studie).</p>
+        <a href="https://cartefibre.arcep.fr" target="_blank" rel="noopener">Ga naar cartefibre.arcep.fr →</a>
+      </div>
+
+      <div class="tool-tile">
+        <h3>Mobiele Dekking (4G/5G)</h3>
+        <p>Onmisbaar als u een mobiel of 4G/5G-box overweegt. Vergelijk de geschatte dekkingskwaliteit per provider (Orange, SFR, Bouygues, Free).</p>
+        <a href="https://monreseaumobile.arcep.fr" target="_blank" rel="noopener">Ga naar monreseaumobile.arcep.fr →</a>
+      </div>
+
+      <div class="tool-tile">
+        <h3>Satelliet (Starlink)</h3>
+        <p>Satelliet is overal beschikbaar (met vrij zicht). Deze kaart toont de netwerkcapaciteit en of u direct kunt bestellen of op een wachtlijst komt.</p>
+        <a href="https://starlink.com/map" target="_blank" rel="noopener">Ga naar starlink.com/map →</a>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
